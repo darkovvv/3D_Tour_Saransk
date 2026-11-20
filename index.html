@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Путешествие по музеям Саранска</title><link rel="stylesheet" href="style.css"></head><body>
+<canvas id="c"></canvas>
+<div id="menu" class="screen"><div class="card wide"><div class="owl">🦉</div><h1>Путешествие по музеям Саранска</h1>
+<p>Я — Мудрый Филин! Выбери музей, гуляй по залам, находи сияющие экспонаты и отвечай на вопросы. Собери все звёзды!</p>
+<div id="list"></div>
+<p class="hint">Телефон: левый круг — ходьба, водить пальцем по экрану — поворот.<br>Компьютер: W A S D — ходьба, стрелки ← → — поворот, E или пробел — осмотреть.</p></div></div>
+<div id="hud" class="hidden">
+<button id="home" class="btn">☰ Музеи</button><div id="title"></div><div id="score"></div><div id="mute" class="btn sm">🔊</div>
+<div id="joy"><div id="knob"></div></div>
+<button id="act" class="btn big hidden">🔍 Осмотреть</button>
+<canvas id="mini" width="120" height="120"></canvas><div id="toast" class="hidden"></div></div>
+<div id="info" class="screen hidden"><div class="card wide"><canvas id="icon" width="128" height="128"></canvas><h2 id="it"></h2><p id="id"></p>
+<div class="fact"><b>🦉 Интересно:</b> <span id="fact"></span></div>
+<div id="quiz" class="hidden"><h3 id="q"></h3><div id="ans"></div><p id="fb"></p></div>
+<button id="go" class="btn big">❓ Проверить себя</button><button id="close" class="btn big hidden">Идём дальше!</button></div></div>
+<div id="end" class="screen hidden"><div class="card"><div class="owl">🏆</div><h2 id="endt">Музей пройден!</h2><div id="stars"></div><p id="endp"></p><button id="again" class="btn big">К выбору музея</button></div></div>
+<script src="game.js"></script></body></html>

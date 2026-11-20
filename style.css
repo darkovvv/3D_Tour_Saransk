@@ -1,0 +1,35 @@
+﻿*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none}
+html,body{margin:0;height:100%;overflow:hidden;background:#111;font-family:"Trebuchet MS",system-ui,Arial,sans-serif;color:#fff;touch-action:none}
+#c{position:fixed;inset:0;width:100%;height:100%;image-rendering:auto}
+.screen{position:fixed;inset:0;background:radial-gradient(circle at 50% 30%,#3b2f5acc,#0d0a1ae6);display:flex;align-items:center;justify-content:center;padding:12px;overflow:auto;z-index:5;touch-action:pan-y}
+.card{max-width:520px;width:100%;background:linear-gradient(#fff8e6,#ffeec2);color:#3a2a18;border-radius:24px;padding:clamp(14px,3vw,26px);text-align:center;margin:auto;border:5px solid #d9902f;box-shadow:0 10px 40px #000a}
+.card.wide{max-width:640px}
+.owl{font-size:56px;animation:bob 2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-8px)}}
+h1{font-size:clamp(22px,5vw,34px);margin:0 0 8px;color:#a8431c}h2{font-size:clamp(20px,4.5vw,28px);margin:6px 0;color:#a8431c}h3{margin:10px 0;font-size:clamp(17px,4vw,22px)}
+p{font-size:clamp(15px,3.6vw,19px);line-height:1.45;margin:8px 0}
+.hint{opacity:.7;font-size:13px}.hidden{display:none!important}
+.btn{background:linear-gradient(#ffcf5a,#f2a21c);color:#4a2600;border:0;border-bottom:4px solid #b36b00;border-radius:14px;padding:11px 16px;font-size:16px;font-weight:800;cursor:pointer;font-family:inherit}
+.btn:active{transform:translateY(2px)}.btn.sm{padding:8px 10px}
+.btn.big{width:100%;padding:15px;font-size:19px;margin-top:10px}
+.mbtn{display:flex;gap:12px;align-items:center;width:100%;margin:10px 0;padding:12px;border-radius:16px;border:3px solid #d9902f;background:#fff;color:#3a2a18;font-size:17px;font-weight:700;text-align:left;font-family:inherit;cursor:pointer}
+.mbtn:active{transform:scale(.98)}.mbtn .em{font-size:38px}.mbtn small{display:block;font-weight:400;opacity:.75;margin-top:3px}.mbtn .st{margin-left:auto;font-size:18px;white-space:nowrap}
+#icon{width:112px;height:112px;background:radial-gradient(#fff,#f5deaa);border-radius:50%;border:4px solid #d9902f}
+.fact{background:#fff;border-radius:14px;padding:10px 12px;margin:8px 0;font-size:clamp(14px,3.4vw,17px);text-align:left;border-left:6px solid #3fa7d6}
+#ans button{display:block;width:100%;margin:8px 0;padding:13px;border-radius:14px;border:3px solid #3fa7d6;background:#fff;font-size:clamp(15px,3.8vw,18px);font-weight:700;color:#234;font-family:inherit;cursor:pointer}
+#ans button.ok{background:#8ee28e;border-color:#2b9a2b}#ans button.bad{background:#ffb3a8;border-color:#d33;animation:sh .3s}
+@keyframes sh{25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+#stars{font-size:46px;letter-spacing:6px}
+#hud{position:fixed;inset:0;pointer-events:none;z-index:2}#hud>*{pointer-events:auto}
+#home{position:absolute;top:calc(8px + env(safe-area-inset-top));left:8px}
+#mute{position:absolute;top:calc(8px + env(safe-area-inset-top));left:112px;font-size:18px}
+#title{position:absolute;top:calc(10px + env(safe-area-inset-top));left:50%;transform:translateX(-50%);background:#000a;padding:6px 12px;border-radius:12px;font-size:14px;text-align:center;pointer-events:none;max-width:34vw}
+#score{position:absolute;top:calc(60px + env(safe-area-inset-top));left:8px;background:#000a;padding:6px 12px;border-radius:12px;pointer-events:none;font-weight:700}
+#toast{position:absolute;top:30%;left:50%;transform:translateX(-50%);background:#fff;color:#3a2a18;padding:12px 20px;border-radius:16px;font-size:20px;font-weight:800;pointer-events:none;border:4px solid #f2a21c;text-align:center}
+#mini{position:absolute;top:calc(8px + env(safe-area-inset-top));right:8px;width:clamp(80px,18vmin,130px);height:auto;border-radius:10px;opacity:.9;pointer-events:none;border:2px solid #fff6}
+#joy{position:absolute;left:max(18px,env(safe-area-inset-left));bottom:max(24px,env(safe-area-inset-bottom));width:clamp(110px,26vmin,170px);aspect-ratio:1;border-radius:50%;background:#fff3;border:3px solid #fff7;touch-action:none}
+#knob{position:absolute;left:50%;top:50%;width:42%;height:42%;margin:-21% 0 0 -21%;border-radius:50%;background:#fffc}
+#act{position:absolute;right:20px;bottom:30px;width:auto;margin:0;padding:18px 24px;animation:pulse 1s infinite}
+@keyframes pulse{50%{transform:scale(1.07)}}
+@media(max-width:700px) and (orientation:portrait){#title{max-width:28vw;font-size:11px}#mute{left:8px;top:calc(110px + env(safe-area-inset-top))}}
+
